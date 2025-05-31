@@ -1,9 +1,6 @@
 package com.example.workmax.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -21,6 +18,7 @@ public class Project {
 
     //private  TeamLead Manager;
 
+    @OneToMany
     private List<Task> taskList;
 
     private List<String> techStack;
